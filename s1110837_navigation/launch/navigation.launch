@@ -1,5 +1,0 @@
-<launch>
-  <param name="use_sim_time" value="true"/>
-  <include file="$(find s1110837_navigation)/launch/localization.launch" />
-  <include file="$(find s1110837_navigation)/launch/move_base.launch" />
-</launch>
