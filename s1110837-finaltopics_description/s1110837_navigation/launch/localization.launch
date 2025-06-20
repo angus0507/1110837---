@@ -1,0 +1,8 @@
+<launch>
+  <node pkg="map_server" type="map_server" name="map_server" args="$(find s1110837_navigation)/maps/sample_map.yaml"/>
+  <node pkg="amcl" type="amcl" name="amcl">
+    <param name="odom_frame_id" value="odom"/>
+    <param name="base_frame_id" value="base_link"/>
+    <param name="scan_topic" value="/scan"/>
+  </node>
+</launch>
